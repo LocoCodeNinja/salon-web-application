@@ -13,6 +13,13 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule} from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
+import { ChatComponent } from './components/chat/chat.component';
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
+import { LocationComponent } from './pages/location/location.component';
+import { StaffComponent } from './pages/staff/staff.component';
+import { CareersComponent } from './pages/careers/careers.component';
+import { AboutComponent } from './pages/about/about.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -23,7 +30,13 @@ import { MatButtonModule } from '@angular/material/button';
     SalonServicesComponent,
     BookingDetailsComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ChatComponent,
+    SlideshowComponent,
+    LocationComponent,
+    StaffComponent,
+    CareersComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +44,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MatGridListModule,
     MatButtonModule,
+    MatToolbarModule
 
   ],
   providers: [],
