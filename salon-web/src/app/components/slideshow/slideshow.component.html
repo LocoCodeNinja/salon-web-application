@@ -1,1 +1,13 @@
-<p>slideshow works!</p>
+<div class="image-gallery">
+    <div class="image-container">
+      <img *ngFor="let image of showImages" [src]="image" alt="Image">
+    </div>
+    <div class="controls">
+      <button mat-icon-button (click)="prev()" [disabled]="currentIndex === 0">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      <button mat-icon-button (click)="next()" [disabled]="currentIndex >= images.length - 4">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
+    </div>
+  </div>

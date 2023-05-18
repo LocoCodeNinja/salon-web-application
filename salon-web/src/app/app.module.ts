@@ -20,6 +20,10 @@ import { StaffComponent } from './pages/staff/staff.component';
 import { CareersComponent } from './pages/careers/careers.component';
 import { AboutComponent } from './pages/about/about.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import { HeaderComponent } from './components/header/header.component';
+import { StoryComponent } from './components/story/story.component';
+import { FollowComponent } from './components/follow/follow.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     LocationComponent,
     StaffComponent,
     CareersComponent,
-    AboutComponent
+    AboutComponent,
+    HeaderComponent,
+    StoryComponent,
+    FollowComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     BrowserAnimationsModule,
     MatGridListModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule
 
   ],
   providers: [],
