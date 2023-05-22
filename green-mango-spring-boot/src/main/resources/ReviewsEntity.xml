@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entity.ReviewsEntity">
+        <table name="reviews" schema="greenmango" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="customerName">
+                <column name="customer_name"/>
+            </basic>
+            <basic name="rating">
+                <column name="rating" precision="-1"/>
+            </basic>
+            <basic name="reviewText">
+                <column name="review_text"/>
+            </basic>
+            <basic name="serviceId">
+                <column name="service_id" precision="-1"/>
+            </basic>
+            <basic name="staffId">
+                <column name="staff_id" precision="-1"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
