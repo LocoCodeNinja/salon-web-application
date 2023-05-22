@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entity.AppointmentsEntity">
+        <table name="appointments" schema="greenmango" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="-1"/>
+            </id>
+            <basic name="customerName">
+                <column name="customer_name"/>
+            </basic>
+            <basic name="customerPhone">
+                <column name="customer_phone"/>
+            </basic>
+            <basic name="customerEmail">
+                <column name="customer_email"/>
+            </basic>
+            <basic name="serviceId">
+                <column name="service_id" precision="-1"/>
+            </basic>
+            <basic name="staffId">
+                <column name="staff_id" precision="-1"/>
+            </basic>
+            <basic name="appointmentTime">
+                <column name="appointment_time" precision="-1"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id" precision="-1"/>
+            </basic>
+            <basic name="userEmail">
+                <column name="user_email"/>
+            </basic>
+            <basic name="serviceName">
+                <column name="service_name"/>
+            </basic>
+            <basic name="serviceDuration">
+                <column name="service_duration" precision="-1"/>
+            </basic>
+            <basic name="servicePrice">
+                <column name="service_price" precision="2"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
